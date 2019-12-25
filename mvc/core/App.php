@@ -14,6 +14,7 @@
                 unset($arr[0]);
             }
             require_once "./mvc/controllers/".$this->controller.".php";
+            $this->controller = new $this->controller;
 
             // xu ly action
             if(isset($arr[1])){
@@ -26,7 +27,7 @@
             // xu ly params
             $this->params = $arr?array_values($arr):[];
 
-            print_r($this->params);
+            call_user_func_array([$this->controller, $this->action], $this->params);
         }
 
         function UrlProcess(){

@@ -1,11 +1,19 @@
 <?php
-    class Home{
+    class Home extends Controller{
 
-        function SayHi(){
+        public function SayHi(){
             echo "Home -- SayHi";
         }
-        function Show(){
-            echo "Home -- Show";
+        public function ShowSV(){
+            // goi model
+            $a = $this->GetModel("SinhVienModel");
+            $sv = $a->GetSv();
+
+            // goi view
+            $a = $this->GetView("home",[
+                "page"=>"new",
+                "sinhvien"=>$sv
+                ]);
         }
     }
 ?>
