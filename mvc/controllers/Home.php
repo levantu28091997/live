@@ -10,7 +10,7 @@
         }
 
         public function SayHi(){
-            echo "Home -- SayHi";
+            $this->GetView("layout1");
         }
         public function ShowSV(){
             // goi model

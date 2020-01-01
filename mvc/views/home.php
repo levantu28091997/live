@@ -9,7 +9,11 @@
 <body>
     <h2>Homepage</h2>
     <p>
-        <?php require_once "./mvc/views/pages/".$data["page"].".php"; ?>
+        <?php 
+            if (isset($data["page"])) {
+                require_once "./mvc/views/pages/".$data["page"].".php";
+        }
+         ?>
     </p>
 </body>
 </html>
