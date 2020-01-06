@@ -1,7 +1,10 @@
 <h2>New</h2>
 
 <?php
-    while ($row = mysqli_fetch_array($data["sinhvien"])) {
-       echo $row["HoTen"];
+    var_dump($data["sinhvien"]);
+    $bb = [];
+    $data["sinhvien"] = $bb;
+    foreach($bb as $item =>$value){
+        echo $value.id;
     }
 ?>

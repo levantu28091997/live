@@ -20,8 +20,7 @@
 
                 // goi model
                 $reusult = $this->userModel->InUser($user, $pass, $email, $diachi);
-
-                var_dump($reusult);
+                
                 // show ket qua
                 $this->GetView("layout2",[
                     "page" => "register",

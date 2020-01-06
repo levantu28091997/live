@@ -14,10 +14,11 @@
         <div class="tab-container">
             <div id="tab_2" class="tab-content">
                 <p>Creating an account will save you time at checkout and allow you to access your order status and history.</p>
+                <div><h2 id="message"></h2> </div>
                 <div class="contact-form">
                     <form class="form-horizontal" method="POST" action="./Register/InsertUser"> 
                         <div class="form-group col-md-6 col-sm-6 col-xs-6">
-                            <input type="text" class="form-control" id="inputemail1" name= "username" placeholder="Username*">             
+                            <input type="text" class="form-control" id="inpusername" name= "username" placeholder="Username*">        
                         </div>
                         <div class="form-group col-md-6 col-sm-6 col-xs-6">
                             <input type="password" class="form-control" id="inputpass2" name="password" placeholder="Password*">            

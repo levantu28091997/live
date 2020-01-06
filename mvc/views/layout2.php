@@ -287,6 +287,7 @@
     <script type="text/javascript" src="./public/assets/js/engo-plugins.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="./public/assets/js/store.js"></script>
+    <script type="text/javascript" src="./public/assets/js/main.js"></script>
     </body>
         
 </html>
